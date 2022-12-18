@@ -13,6 +13,11 @@
 
         <!-- Configuração do hibernate para saber qual o dialect do banco -->
         <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+        <!-- Mostrar logs das execuções no banco -->
+        <property name="hibernate.show_sql" value="true"/>
+        <!-- O hibernate irá olhar para as entidades e gerar a DDL (irá criar o schema do banco) -->
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+
     </properties>
     </persistence-unit>
 
